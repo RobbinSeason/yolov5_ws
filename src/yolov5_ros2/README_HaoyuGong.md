@@ -1,47 +1,73 @@
-## self readme start #
-## object detection part
+# Object Detection (YOLOv5 + ROS 2)
 
-## 0. 安装依赖
+---
 
-首先，确保您已经更新了系统并且安装了必要的依赖。以下是一些安装步骤，其中`$ROS_DISTRO` 是您的ROS2发行版（例如：`foxy`、`galactic`）：
+## 0. Prerequisites & Dependencies
+
+Before building the workspace, make sure the required dependencies are installed.
+
+> `$ROS_DISTRO` refers to your ROS 2 distribution (e.g. `foxy`, `galactic`, `humble`).
 
 ```bash
 sudo apt update
 sudo apt install python3-pip ros-$ROS_DISTRO-vision-msgs
-pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple yolov5  
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple yolov5
 ```
-## 1. ducument configuration
- best.pt :  need to be put under the document of config
 
-## 2. adjust the parameter and select the camera
-yolov5_ros2_launch.py :
-# first node 
-some parameters
-# others
-topic about camera
+## 1. Model & File Configuration
+YOLOv5 Weights
 
-## 3. colcon build and lauch
+    best.pt
 
-编译项目并设置环境变量
+        Trained YOLOv5 model weights
 
-```bash
+        Must be placed under the config/ directory
+
+Example structure:
+
+yolov5_ws/
+└── src/
+    └── yolov5_ros2/
+        └── config/
+            └── best.pt
+
+## 2. Parameter Configuration & Camera Selection
+
+The main launch file is:
+
+yolov5_ros2_launch.py
+
+In this file, you can configure:
+Detection Parameters
+
+Camera Topics
+
+Make sure the selected topics match the actual robot camera configuration.
+
+## 3. Build & Launch
+
+Build the workspace and source the environment:
+
 cd yolov5_ws
 colcon build
 source install/setup.bash
 
+Launch the object detection node:
+
 ros2 launch yolov5_ros2 yolov5_ros2_launch.py
-```
 
-## 4.result
-the result will be shown by topic : /Vision_result_Team3
+## 4. Output Topic & Message Format
 
-basic introduction about the msg:  (only list the key-info)
----
-frame_id: spot/body       # name of coorderate base
-class_id: ball            # class
-score: 0.8171692490577698 # the confidence of the bbox
-position:                 # coorderate after tf
-  x: -1.1204196044181618
-  y: -0.49767466398206756
-  z: -0.5263708318374491
+Detection results are published on the following topic:
 
+/Vision_result_Team3
+
+Message Overview (only key info)
+
+frame_id: spot/body        # reference coordinate frame
+class_id: ball             # detected object class
+score: 0.8171692490577698  # detection confidence
+position:                 # 3D position after TF transformation
+  x: -1.1204
+  y: -0.4977
+  z: -0.5264

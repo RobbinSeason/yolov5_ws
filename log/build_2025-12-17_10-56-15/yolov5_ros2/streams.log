@@ -1,0 +1,45 @@
+[0.647s] Invoking command in '/home/haoyu/yolov5_ws/build/yolov5_ros2': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/haoyu/yolov5_ws/build/yolov5_ros2/build
+[0.868s] running develop
+[0.998s] Removing /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5-ros2.egg-link (link to .)
+[1.043s] Invoked command in '/home/haoyu/yolov5_ws/build/yolov5_ros2' returned '0': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/haoyu/yolov5_ws/build/yolov5_ros2/build
+[1.045s] Invoking command in '/home/haoyu/yolov5_ws/src/yolov5_ros2': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/haoyu/yolov5_ws/build/yolov5_ros2/build install --record /home/haoyu/yolov5_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data --force
+[1.267s] running egg_info
+[1.277s] writing ../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO
+[1.277s] writing dependency_links to ../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt
+[1.277s] writing entry points to ../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt
+[1.277s] writing requirements to ../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt
+[1.277s] writing top-level names to ../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt
+[1.300s] reading manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[1.302s] writing manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[1.302s] running build
+[1.302s] running build_py
+[1.302s] creating /home/haoyu/yolov5_ws/build/yolov5_ros2/build
+[1.302s] creating /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib
+[1.302s] creating /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.302s] copying yolov5_ros2/__init__.py -> /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.302s] copying yolov5_ros2/cv_tool.py -> /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.302s] copying yolov5_ros2/yolo_detect_2d.py -> /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.303s] running install
+[1.307s] running install_lib
+[1.315s] creating /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[1.315s] copying /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2/__init__.py -> /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[1.315s] copying /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2/cv_tool.py -> /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[1.315s] copying /home/haoyu/yolov5_ws/build/yolov5_ros2/build/lib/yolov5_ros2/yolo_detect_2d.py -> /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[1.315s] byte-compiling /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/__init__.py to __init__.cpython-310.pyc
+[1.316s] byte-compiling /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/cv_tool.py to cv_tool.cpython-310.pyc
+[1.316s] byte-compiling /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/yolo_detect_2d.py to yolo_detect_2d.cpython-310.pyc
+[1.317s] running install_data
+[1.317s] copying resource/yolov5_ros2 -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/ament_index/resource_index/packages
+[1.317s] copying package.xml -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2
+[1.317s] copying launch/yolov5_ros2_launch.py -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/launch
+[1.317s] copying config/best.pt -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[1.327s] copying config/camera_info.yaml -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[1.327s] copying resource/yolov5_ros2 -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.327s] copying resource/mouse.png -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.327s] copying resource/fish.jpg -> /home/haoyu/yolov5_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.327s] running install_egg_info
+[1.335s] Copying ../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-0.0.0-py3.10.egg-info
+[1.335s] running install_scripts
+[1.369s] Installing yolo_detect_2d script to /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/yolov5_ros2
+[1.371s] writing list of installed files to '/home/haoyu/yolov5_ws/build/yolov5_ros2/install.log'
+[1.401s] Invoked command in '/home/haoyu/yolov5_ws/src/yolov5_ros2' returned '0': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/haoyu/yolov5_ws/build/yolov5_ros2/build install --record /home/haoyu/yolov5_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data --force

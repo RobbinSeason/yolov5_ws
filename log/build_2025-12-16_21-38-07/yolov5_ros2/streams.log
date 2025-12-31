@@ -1,0 +1,17 @@
+[0.541s] Invoking command in '/home/haoyu/yolov5_ws/build/yolov5_ros2': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/haoyu/yolov5_ws/build/yolov5_ros2/build --no-deps symlink_data
+[0.733s] running develop
+[0.846s] running egg_info
+[0.852s] writing yolov5_ros2.egg-info/PKG-INFO
+[0.852s] writing dependency_links to yolov5_ros2.egg-info/dependency_links.txt
+[0.852s] writing entry points to yolov5_ros2.egg-info/entry_points.txt
+[0.853s] writing requirements to yolov5_ros2.egg-info/requires.txt
+[0.853s] writing top-level names to yolov5_ros2.egg-info/top_level.txt
+[0.864s] reading manifest file 'yolov5_ros2.egg-info/SOURCES.txt'
+[0.865s] writing manifest file 'yolov5_ros2.egg-info/SOURCES.txt'
+[0.871s] running build_ext
+[0.871s] Creating /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages/yolov5-ros2.egg-link (link to .)
+[0.871s] Installing yolo_detect_2d script to /home/haoyu/yolov5_ws/install/yolov5_ros2/lib/yolov5_ros2
+[0.872s] 
+[0.872s] Installed /home/haoyu/yolov5_ws/build/yolov5_ros2
+[0.872s] running symlink_data
+[0.906s] Invoked command in '/home/haoyu/yolov5_ws/build/yolov5_ros2' returned '0': PYTHONPATH=/home/haoyu/yolov5_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haoyu/yolov5_ws/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/haoyu/yolov5_ws/build/yolov5_ros2/build --no-deps symlink_data
